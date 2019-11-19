@@ -26,7 +26,7 @@ app.get("/post", (req, res) => {
     if (err) {
       res.send(err);
     } else {
-      res.json(doc);
+      res.json(doc.reverse());
     }
   });
 });
